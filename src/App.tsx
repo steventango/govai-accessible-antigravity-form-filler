@@ -216,7 +216,7 @@ function App() {
   const loadDemoPDF = async () => {
     console.log('[Demo] Loading demo PDF...');
     try {
-      const response = await fetch(`${import.meta.env.BASE_URL}grain-receipt-en.pdf`);
+      const response = await fetch('grain-receipt-en.pdf');
       console.log('[Demo] Fetch response status:', response.status);
 
       if (!response.ok) {
